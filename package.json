@@ -1,0 +1,24 @@
+{
+  "name": "graphql-cheatsheet-demo",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "jest",
+    "docker:build": "docker build -t graphql-cheatsheet-api .",
+    "docker:run": "docker run -p 4000:4000 graphql-cheatsheet-api",
+    "docker:compose": "docker-compose up --build"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.10.0",
+    "dataloader": "^2.2.3",
+    "graphql": "^16.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
+    "babel-jest": "^30.4.1",
+    "jest": "^30.4.2"
+  }
+}
